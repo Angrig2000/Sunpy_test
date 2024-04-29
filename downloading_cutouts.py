@@ -54,7 +54,7 @@ jsoc_email = os.environ["JSOC_EMAIL"]
 query = Fido.search(
     a.Time(start_time, start_time + 1*u.s),
     a.Wavelength(171*u.angstrom),
-    a.jsoc.Series.aia_lev1_euv_12s,
+    a.jsoc.Series.aia_lev1_euv_12s, # 94 Å,131 Å,171 Å, 193 Å, 211 Å, 304 Å, 335 Å
     a.jsoc.Notify(jsoc_email),
     #a.jsoc.Segment.image,
     #cutout,
